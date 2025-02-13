@@ -6,10 +6,10 @@
 export DEBUG_MODE="true"
 export LOG_PATH="./vllm_run.txt"
 
-QWEN_PATH="PATH_TO_QWEN_2B_CKPT"
-HF_DATASET="MMInstruction/Clevr_CoGenT_TrainA_70K_Complex" 
+QWEN_PATH="/home/zhuyousong/zhengsr/hf_cache/Qwen/Qwen2.5-VL-3B-Instruct"
+HF_DATASET="/home/zhuyousong/zhengsr/dataset/r1-V/GEOQA_R1V_Train_8K" 
 OUTPUT_DIR="OUTPUT_DIR" 
-RUN_NAME="RUN_NAME_FOR_WANDB"
+RUN_NAME="Qwen2.5-VL-3B-Instruct-GRPO-GEOQA_R1V_Train_8K"
 
 # NOTE: you are expected to use X + 1 cards for X training proc and 1 vLLM proc 
 # e.g., the visible devices should be 0,1,2,3,4 for 5 cards, and  --nproc_per_node="4"
